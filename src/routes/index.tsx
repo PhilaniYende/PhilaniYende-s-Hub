@@ -15,7 +15,7 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Flow — AI assistant for people drowning in email" },
       {
         property: "og:description",
-        content: "Draft emails, summarize meetings, and reclaim your workday.",
+        content: "Flow drafts your emails and summarizes your meetings so you can stop losing hours to your inbox. An AI teammate for burnt-out professionals.",
       },
     ],
   }),

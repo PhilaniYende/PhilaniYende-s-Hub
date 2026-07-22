@@ -82,16 +82,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Flow drafts your emails and summarizes your meetings so you can reclaim your workday.",
+          "Flow drafts your emails and summarizes your meetings so you can stop losing hours to your inbox. An AI teammate for burnt-out professionals.",
       },
       { name: "author", content: "Flow" },
       { property: "og:title", content: "Flow — AI assistant for people drowning in email" },
       {
         property: "og:description",
-        content: "Draft emails, summarize meetings, and stop losing hours to your inbox.",
+        content: "Flow drafts your emails and summarizes your meetings so you can stop losing hours to your inbox. An AI teammate for burnt-out professionals.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Flow — AI assistant for people drowning in email" },
+      { name: "twitter:description", content: "Flow drafts your emails and summarizes your meetings so you can stop losing hours to your inbox. An AI teammate for burnt-out professionals." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/817ec363-e8f2-4708-ab8c-36816f52f547/id-preview-0845cc08--9a42a25c-7898-4d47-82b9-9b0fec2afe13.lovable.app-1784725668571.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/817ec363-e8f2-4708-ab8c-36816f52f547/id-preview-0845cc08--9a42a25c-7898-4d47-82b9-9b0fec2afe13.lovable.app-1784725668571.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
