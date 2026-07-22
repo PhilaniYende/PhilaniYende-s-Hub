@@ -91,7 +91,7 @@ function ChatInner({
   useEffect(() => {
     if (status !== "ready") return;
     if (messages.length <= lastSavedRef.current) return;
-    const toSave = messages.slice(lastSavedRef.current).map((m) => ({
+    const toSave = messages.slice(lastSavedRef.current).map((m: UIMessage) => ({
       role: m.role,
       parts: m.parts as unknown as unknown[],
     }));
@@ -117,7 +117,7 @@ function ChatInner({
           {messages.length === 0 ? (
             <EmptyState onPick={(p) => sendMessage({ text: p })} />
           ) : (
-            messages.map((m) => <MessageBubble key={m.id} message={m} />)
+            messages.map((m: UIMessage) => <MessageBubble key={m.id} message={m} />)
           )}
           {status === "submitted" && (
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
