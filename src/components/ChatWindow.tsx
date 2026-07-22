@@ -211,7 +211,7 @@ function MessageBubble({ message }: { message: UIMessage }) {
         {isUser ? (
           <p className="whitespace-pre-wrap">{text}</p>
         ) : (
-          <div className="prose prose-sm dark:prose-invert max-w-none prose-p:my-2 prose-headings:mt-4 prose-headings:mb-2 prose-ul:my-2 prose-ol:my-2">
+          <div className="prose max-w-none">
             <ReactMarkdown>{text}</ReactMarkdown>
           </div>
         )}
