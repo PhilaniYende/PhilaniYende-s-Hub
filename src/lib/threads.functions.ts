@@ -63,8 +63,8 @@ export const getThreadMessages = createServerFn({ method: "GET" })
     return (rows ?? []).map((r) => ({
       id: r.id,
       role: r.role as "user" | "assistant" | "system",
-      parts: r.parts as UIMessage["parts"],
-    })) as UIMessage[];
+      parts: r.parts as unknown as UIMessage["parts"],
+    }));
   });
 
 export const saveMessages = createServerFn({ method: "POST" })
