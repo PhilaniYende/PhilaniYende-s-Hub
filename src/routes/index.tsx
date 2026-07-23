@@ -6,13 +6,13 @@ import logo from "@/assets/logo.png";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Flow — AI assistant for people drowning in email" },
+      { title: "Philani Yende Hub" },
       {
         name: "description",
         content:
           "Flow drafts your emails and summarizes your meetings so you can stop losing hours to your inbox. An AI teammate for burnt-out professionals.",
       },
-      { property: "og:title", content: "Flow — AI assistant for people drowning in email" },
+      { property: "og:title", content: "Philani Yende Hub" },
       {
         property: "og:description",
         content: "Flow drafts your emails and summarizes your meetings so you can stop losing hours to your inbox. An AI teammate for burnt-out professionals.",

@@ -78,28 +78,27 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Flow — AI assistant for people drowning in email" },
+      { title: "Philani Yende Hub" },
       {
         name: "description",
         content:
           "Flow drafts your emails and summarizes your meetings so you can stop losing hours to your inbox. An AI teammate for burnt-out professionals.",
       },
       { name: "author", content: "Flow" },
-      { property: "og:title", content: "Flow — AI assistant for people drowning in email" },
+      { property: "og:title", content: "Philani Yende Hub" },
       {
         property: "og:description",
         content: "Flow drafts your emails and summarizes your meetings so you can stop losing hours to your inbox. An AI teammate for burnt-out professionals.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Flow — AI assistant for people drowning in email" },
+      { name: "twitter:title", content: "Philani Yende Hub" },
       { name: "twitter:description", content: "Flow drafts your emails and summarizes your meetings so you can stop losing hours to your inbox. An AI teammate for burnt-out professionals." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/817ec363-e8f2-4708-ab8c-36816f52f547/id-preview-0845cc08--9a42a25c-7898-4d47-82b9-9b0fec2afe13.lovable.app-1784725668571.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/817ec363-e8f2-4708-ab8c-36816f52f547/id-preview-0845cc08--9a42a25c-7898-4d47-82b9-9b0fec2afe13.lovable.app-1784725668571.png" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/CnpT8o2DiGaEUv4u6HLLFd1nCdj2/social-images/social-1784795492871-philani-yende-hub-profile.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/CnpT8o2DiGaEUv4u6HLLFd1nCdj2/social-images/social-1784795492871-philani-yende-hub-profile.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
