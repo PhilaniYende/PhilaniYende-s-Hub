@@ -69,7 +69,21 @@ function ChatInner({
   persist: (opts: { data: { threadId: string; messages: Array<{ role: string; parts: unknown[] }> } }) => Promise<unknown>;
   onFirstSave: () => void;
 }) {
-  const transport = useMemo(() => new DefaultChatTransport({ api: "/api/chat" }), []);
+  const transport = useMemo(
+    () =>
+      new DefaultChatTransport({
+        api: "/api/chat",
+        fetch: async (input, init) => {
+          const { data } = await supabase.auth.getSession();
+          const headers = new Headers(init?.headers);
+          if (data.session?.access_token) {
+            headers.set("Authorization", `Bearer ${data.session.access_token}`);
+          }
+          return fetch(input, { ...init, headers });
+        },
+      }),
+    [],
+  );
   const { messages, sendMessage, status } = useChat({
     id: threadId,
     messages: initialMessages,
